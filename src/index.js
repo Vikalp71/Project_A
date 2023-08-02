@@ -40,5 +40,3 @@ reactDOM.render((
 
 
 
-
-baby ko base pasand haii
