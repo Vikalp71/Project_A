@@ -1,19 +1,40 @@
 import React from "react";
-import Intro from "./components/Intro.js";
-import Footer from "./components/Header.js";
-import Header from "./components/Footer.js";
+import HeaderComponent from "./components/header.js";
+import FooterComponent from "./components/Footer.js";
 
-import Ims from "./components/ims.js";
+
+
+var x={
+  UserName:"x",
+  Age:"22"
+}
+
+var y={
+  UserName:"y",
+  Age:"21"
+}
+
+var salary=[200,400,600,500,700];
+
+var sum=0;
+
+for(let i=0;i<salary.length;i++)
+{
+sum=sum+salary[i];
+}
 
 export default function App() {
   return (
     <div>
-      <Intro />
-      <Header />
-      <Footer/>
-      <Footer/>
-      <Footer/>
-      <Ims/>
+      <HeaderComponent 
+      salary={sum}
+      employee={y} 
+      UserName="viku" 
+      age='20' 
+      />
+
+
+      <FooterComponent/>
     </div>
   );
 }

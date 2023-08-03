@@ -1,4 +1,8 @@
+import React from "react";
+
+
 export default function HeaderComponent(props){
+
     alert(props.UserName)
     return (
         <div>
